@@ -1,3 +1,6 @@
+---
+
+---
 
 <!doctype html>
 <html lang="zh" class="scroll-pt-16 md:scroll-pt-20 lg:scroll-pt-24 scroll-smooth">
@@ -9,19 +12,18 @@
 		<meta name="generator" content={Astro.generator} />
 		<title>Astro</title>
 	</head>
-	<body ontouchstart="ontouchstart" class="scroll-smooth break-all bg-gradient-to-r from-[#ffefba] to-white backdrop-blur flex flex-row justify-center">
-		<main class="basis-full lg:basis-1/2">
-
-			<!-- =====头像名称===== -->
-			<section class="container mx-auto px-6 pt-16 lg:flex lg:justify-between lg:items-center">
+	<body ontouchstart="ontouchstart" class="scroll-smooth break-all bg-gradient-to-r from-[#ffefba] to-white backdrop-blur w-1/2 mx-auto">
+		<main class="px-6">
+			 <!-- =====头像名称===== -->
+			 <section class="container mx-auto pt-16">
 				<div class="flex items-center">
-					<img src="https://cravatar.com/avatar/5FBB13B635295D1226A17B782951C309?s=400&f=mp" class="h-16 w-16 shrink-0 rounded-xl drop-shadow-lg outline outline-1 outline-offset-1 outline-gray-200 overflow-hidden">
+					<a href="/"><img src="https://cravatar.com/avatar/5FBB13B635295D1226A17B782951C309?s=400&f=mp" class="h-16 w-16 shrink-0 rounded-xl drop-shadow-lg outline outline-1 outline-offset-1 outline-gray-200 overflow-hidden"></a>
 					<div class="ml-2.5 md:ml-3.5 lg:ml-5">
 						<span class="font-bold bg-gradient-to-r from-indigo-600 to-pink-500 text-white px-2">Hello</span>
 						<h1 class="text-xl lg:text-3xl font-bold">Welcome to <span class="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500">WO.JB18.CM</span></h1>
 					</div>
 				</div>
-				<div class="flex items-center gap-2 mt-5 lg:mt-0">
+				<div class="flex items-center gap-2 mt-5">
 					<div class="w-5">
 						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-full h-full"><path stroke-linecap="round" stroke-linejoin="round" d="M12.75 3.03v.568c0 .334.148.65.405.864l1.068.89c.442.369.535 1.01.216 1.49l-.51.766a2.25 2.25 0 01-1.161.886l-.143.048a1.107 1.107 0 00-.57 1.664c.369.555.169 1.307-.427 1.605L9 13.125l.423 1.059a.956.956 0 01-1.652.928l-.679-.906a1.125 1.125 0 00-1.906.172L4.5 15.75l-.612.153M12.75 3.031a9 9 0 00-8.862 12.872M12.75 3.031a9 9 0 016.69 14.036m0 0l-.177-.529A2.25 2.25 0 0017.128 15H16.5l-.324-.324a1.453 1.453 0 00-2.328.377l-.036.073a1.586 1.586 0 01-.982.816l-.99.282c-.55.157-.894.702-.8 1.267l.073.438c.08.474.49.821.97.821.846 0 1.598.542 1.865 1.345l.215.643m5.276-3.67a9.012 9.012 0 01-5.276 3.67m0 0a9 9 0 01-10.275-4.835M15.75 9c0 .896-.393 1.7-1.016 2.25"></path></svg>
 					</div>
@@ -30,7 +32,7 @@
 			</section>
 
 			<!-- =====简介===== -->
-			<section class="container mx-auto px-6 pt-16">
+			<section class="container mx-auto pt-16">
 				<article class="text-2xl tracking-wide leading-relaxed">
 					<div>
 						我是一名自学后端的独立开发者，目前在学习前端<span class="text-xs text-slate-500">（2023）</span>。
@@ -43,7 +45,7 @@
 			</section>
 
 			<!-- =====社交平台===== -->
-			<section class="container mx-auto px-6 pt-16">
+			<section class="container mx-auto pt-16">
 				<h2 class="font-bold text-lg">🎨 如何找到我？</h2>
 				<div class="flex flex-wrap items-center gap-2.5 mt-5 drop-shadow">
 					<button class="transition duration-300 active:scale-90 bg-[#07c160] px-2 py-1 rounded-lg flex items-center gap-1 hover:opacity-75" onclick="copyWechat();">
@@ -62,7 +64,7 @@
 			</section>
 
 			<!-- =====联系方式===== -->
-			<section class="container mx-auto px-6 pt-16">
+			<section class="container mx-auto pt-16">
 				<h2 class="font-bold text-lg">📫 联系我</h2>
 				<div class=" mt-5 leading-loose font-mono tracking-wide">
 					<p><a href="mailto:wo@jb18.cm">wo@jb18.cm<span class="text-xs text-slate-500"> （主）</span></a></p>
@@ -71,7 +73,7 @@
 				</div>
 			</section>
 
-			<section class="container mx-auto px-6 pt-16 hidden">
+			<section class="container mx-auto pt-16 hidden">
 				
 				<ol class="relative border-s border-gray-200 dark:border-gray-700">                  
 					<li class="mb-10 ms-4">
@@ -100,6 +102,17 @@
 			</section>
 		</main>
 
+		<footer class="pt-32 p-6">
+			<section class="text-xs text-black/30 text-neutral-content leading-loose">
+				<nav class="flex flex-wrap gap-2">
+					<a class="hover:text-black/50 hover:underline" href="update-logs/">更新日志</a>
+					<a class="hover:text-black/50 hover:underline" href="about/">关于</a>
+				</nav>
+				<p>Copyright © 2023 - All right reserved by 袁某人</p>
+				<p>Astro & Tailwindcss, at 10/06/2024</p>
+			</section>
+		</footer>
+
 		<script type="text/javascript">
 			function copyWechat() {
 				navigator.clipboard.writeText('ymc0182'); 
@@ -108,3 +121,10 @@
 		</script>
 	</body>
 </html>
+
+
+<style is:global>
+body {
+	font-family: 'Noto Sans SC Variable', sans-serif;
+}
+</style>
