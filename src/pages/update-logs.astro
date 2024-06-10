@@ -13,7 +13,7 @@ import '@fontsource-variable/noto-sans-sc';
 		<meta name="generator" content={Astro.generator} />
 		<title>Astro</title>
 	</head>
-	<body ontouchstart="ontouchstart" class="scroll-smooth break-all bg-gradient-to-r from-[#ffefba] to-white backdrop-blur w-1/2 mx-auto tracking-wider">
+	<body ontouchstart="ontouchstart" class="scroll-smooth break-all bg-gradient-to-r from-[#ffefba] to-white backdrop-blur w-full lg:w-1/2 mx-auto tracking-wider">
 		<main class="px-6">
 
             <!-- =====头像名称===== -->
@@ -41,10 +41,11 @@ import '@fontsource-variable/noto-sans-sc';
 				<ol class="relative border-s border-gray-200 dark:border-gray-700">                  
 					<li class="mb-10 ms-4">
 						<div class="absolute w-3 h-3 bg-gray-300 rounded-full mt-1.5 -start-1.5"></div>
-						<time class="mb-1 text-sm font-normal leading-none text-gray-500">v0.1</time>
-						<h3 class="text-lg font-semibold text-gray-900">E-Commerce UI code in Tailwind CSS</h3>
-						<p class="text-base font-normal text-gray-500">Get started with dozens of web components and interactive elements built on top of Tailwind CSS.</p>
-					</li>
+						<article class="rounded-xl border border-gray-300 px-5 py-2.5">
+                            <time class="mb-1 text-xs leading-none text-gray-400">2022</time>
+                            <h3 class="text-lg font-bold text-gray-900">V0.1</h3>
+                        </article>
+                    </li>
                     <li class="mb-10 ms-4">
 						<div class="absolute w-3 h-3 bg-gray-300 rounded-full mt-1.5 -start-1.5"></div>
 						<time class="mb-1 text-sm font-normal leading-none text-gray-500">v0.1</time>
@@ -53,9 +54,9 @@ import '@fontsource-variable/noto-sans-sc';
 					</li>
 					<li class="ms-4">
 						<div class="absolute w-3 h-3 bg-gray-300 rounded-full mt-1.5 -start-1.5"></div>
-						<time class="mb-1 text-sm font-normal leading-none text-gray-500">v0.1</time>
-						<h3 class="text-lg font-semibold text-gray-900">E-Commerce UI code in Tailwind CSS</h3>
-						<p class="text-base font-normal text-gray-500">Get started with dozens of web components and interactive elements built on top of Tailwind CSS.</p>
+						<time class="mb-1 text-sm font-normal leading-none text-gray-500">2022</time>
+						<h3 class="text-lg font-semibold text-gray-900">V0.1</h3>
+						<p class="text-base font-normal text-gray-500">用引入Wailwindcss CDN 方式写第一个版本，部署在Cloudflare Page</p>
 					</li>
 				</ol>
 
