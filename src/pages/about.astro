@@ -1,0 +1,39 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import HeaderComponent from "../components/HeaderComponent.astro";
+import PageTitleComponent from "../components/PageTitleComponent.astro";
+---
+
+<BaseLayout>
+
+    <HeaderComponent />
+
+    <PageTitleComponent title="🤡 关于" />
+    
+    <!-- =====更新日志===== -->
+    <article class="pt-16 leading-loose font-mono tracking-wide">
+        <p>这一版提供了一个全面的更新日志，列出了这个版本中所有已修复的Bug、特性和优化情况。
+            A full changelog is available, listing all of the bugfixes, features and optimizations which are in this release.
+            www.infoq.com
+            
+            2.
+            完成了地图的更新日志，其中包括我在过去几个月所做的素有修正。
+            Finalizing the mapping changelog including all the fixes I've made during the past couple of months.
+            forum.csmod.com
+            
+            3.
+            使用DB2.UPDATE SP CONFIG存储过程更新日志标记
+            Update logging tokens using the DB2.UPDATE_SP_CONFIG stored procedure
+            www.ibm.com
+            
+            4.
+            可以从其站点上下载最新的发布，同时JIRA上有其更新日志。
+            The latest release can be downloaded on their site and the change logs are available on JIRA.
+            www.infoq.com
+            
+            5.
+            从上次报告以来就没有更新日志文件。
+            There is no updated log file since the last report.</p>
+    </article>
+
+</BaseLayout>

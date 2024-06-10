@@ -1,0 +1,46 @@
+---
+// Supports weights 100-900
+import '@fontsource-variable/noto-sans-sc';
+---
+
+<!doctype html>
+<html lang="zh" class="scroll-pt-16 md:scroll-pt-20 lg:scroll-pt-24 scroll-smooth">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<meta name="view-transition" content="same-origin">
+		<meta name="generator" content={Astro.generator} />
+		<title>Astro</title>
+	</head>
+	<body ontouchstart="ontouchstart" class="scroll-smooth break-all bg-gradient-to-r from-[#ffefba] to-white backdrop-blur w-full lg:w-1/2 mx-auto tracking-wider">
+		<main class="px-6">
+			 <slot />
+		</main>
+
+		<footer class="pt-32 p-6">
+			<section class="text-xs text-black/30 text-neutral-content leading-loose">
+				<nav class="flex flex-wrap gap-2">
+					<a class="hover:text-black/50 hover:underline" href="update-logs/">更新日志</a>
+					<a class="hover:text-black/50 hover:underline" href="about/">关于</a>
+				</nav>
+				<p>Copyright © 2023 - All right reserved by 袁某人</p>
+				<p>Astro & Tailwindcss, at 10/06/2024</p>
+			</section>
+		</footer>
+
+		<script type="text/javascript">
+			function copyWechat() {
+				navigator.clipboard.writeText('ymc0182'); 
+				alert("已复制微信号[YMC0182]");
+			}
+		</script>
+	</body>
+</html>
+
+
+<style is:global>
+body {
+	font-family: 'Noto Sans SC Variable', sans-serif;
+}
+</style>
